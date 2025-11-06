@@ -1,45 +1,58 @@
-# Perceptron  
-Learning how single Perceptron works  
+# Perceptron
 
-## Table of Contents  
-- [Overview](#overview)  
-- [Features](#features)  
-- [Getting Started](#getting-started)  
-  - [Prerequisites](#prerequisites)  
-  - [Installation](#installation)  
-  - [Usage](#usage)  
-- [Project structure](#project-structure)  
-- [Examples](#examples)  
-- [Configuration](#configuration)  
-- [Algorithms & Theory](#algorithms–theory)  
-- [Tests](#tests)  
-- [Contributing](#contributing)  
-- [License](#license)  
-- [Acknowledgements](#acknowledgements)  
+A simple implementation of a single-layer Perceptron written in Python.  
+This project demonstrates how a perceptron learns to classify data using a linear decision boundary.
 
-## Overview  
-This project implements a simple single-layer perceptron algorithm in Python. It includes:  
-- a base perceptron implementation (`perceptron.py`)  
-- an example using the Iris dataset classification (`iris_type_predictor.py`)  
-- demonstration files & logging  
---  
-The goal is to provide a clean and educational version of the perceptron, so you can understand how it works from scratch.
+---
 
-## Features  
-- Implementation of the perceptron learning algorithm (update rule, activation, etc.)  
-- Example usage for the Iris dataset  
-- Easily extendable to more datasets  
-- Lightweight, minimal dependencies  
+## 📌 Overview
 
-## Getting Started  
+This repository contains:
+- A minimal perceptron implementation from scratch  
+- An Iris dataset classifier example  
+- Clean, easy-to-understand code for beginners learning ML fundamentals  
 
-### Prerequisites  
-- Python 3.7+ (or whichever version you used)  
-- NumPy (if used)  
-- (Optional) pandas / scikit-learn for dataset loading  
+The goal of this project is to show how classic perceptrons work internally without using any external machine-learning frameworks.
 
-### Installation  
-1. Clone the repository:  
-   ```bash
-   git clone https://github.com/mgardzina/Perceptron.git  
-   cd Perceptron  
+---
+
+## 🧠 How It Works
+
+The perceptron algorithm:
+1. Initializes weights
+2. Computes prediction using:  
+   `activation(weights · x + bias)`
+3. Compares prediction with true label
+4. Updates weights if the prediction was wrong
+5. Repeats for multiple epochs until convergence
+
+This algorithm is the foundation of modern neural networks (MLPs, deep learning).
+
+---
+
+## 📁 Project Structure
+Perceptron/
+│
+├── perceptron.py # Core perceptron class and training logic
+├── iris_type_predictor.py # Example using the Iris dataset
+└── README.md
+
+
+---
+
+## ▶️ Usage
+
+Run the perceptron demonstration:
+
+```bash
+python perceptron.py
+Run the Iris dataset classifier:
+python iris_type_predictor.py
+Feel free to modify learning rate, epochs, or dataset to experiment.
+
+🔧 Installation
+Clone the repository:
+git clone https://github.com/mgardzina/Perceptron.git
+cd Perceptron
+(Optional) Install dependencies if added later:
+pip install -r requirements.txt
