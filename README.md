@@ -19,24 +19,25 @@ The goal of this project is to show how classic perceptrons work internally with
 ## 🧠 How It Works
 
 The perceptron algorithm:
-1. Initializes weights
-2. Computes prediction using:  
-   `activation(weights · x + bias)`
-3. Compares prediction with true label
-4. Updates weights if the prediction was wrong
-5. Repeats for multiple epochs until convergence
 
-This algorithm is the foundation of modern neural networks (MLPs, deep learning).
+1. Initializes weights  
+2. Computes prediction using:  
+   `activation(weights · x + bias)`  
+3. Compares the prediction with the true label  
+4. Updates weights if the prediction was wrong  
+5. Repeats for multiple epochs until convergence  
+
+This algorithm is the foundation of modern neural networks.
 
 ---
 
 ## 📁 Project Structure
+
 Perceptron/
 │
 ├── perceptron.py # Core perceptron class and training logic
 ├── iris_type_predictor.py # Example using the Iris dataset
 └── README.md
-
 
 ---
 
@@ -49,7 +50,6 @@ python perceptron.py
 Run the Iris dataset classifier:
 python iris_type_predictor.py
 Feel free to modify learning rate, epochs, or dataset to experiment.
-
 🔧 Installation
 Clone the repository:
 git clone https://github.com/mgardzina/Perceptron.git
